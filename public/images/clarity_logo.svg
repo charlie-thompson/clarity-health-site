@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 240" width="560" height="240">
+  <defs>
+    <!-- Outer sphere gradient - silver/light blue ring -->
+    <radialGradient id="outerSphere" cx="45%" cy="35%" r="50%" fx="40%" fy="30%">
+      <stop offset="0%" stop-color="#E8EEF4"/>
+      <stop offset="40%" stop-color="#C8D8E8"/>
+      <stop offset="70%" stop-color="#A0B8D0"/>
+      <stop offset="90%" stop-color="#B0C4D8"/>
+      <stop offset="100%" stop-color="#D0DCE8"/>
+    </radialGradient>
+    
+    <!-- Inner sphere gradient - the blue globe -->
+    <radialGradient id="innerSphere" cx="45%" cy="35%" r="55%" fx="38%" fy="28%">
+      <stop offset="0%" stop-color="#7CB8E0"/>
+      <stop offset="25%" stop-color="#4A9AD4"/>
+      <stop offset="50%" stop-color="#2878C0"/>
+      <stop offset="75%" stop-color="#1858A0"/>
+      <stop offset="100%" stop-color="#0A3474"/>
+    </radialGradient>
+    
+    <!-- Crescent gradient - dark to medium blue -->
+    <linearGradient id="crescentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A2854"/>
+      <stop offset="40%" stop-color="#0E3C78"/>
+      <stop offset="70%" stop-color="#1A5CA8"/>
+      <stop offset="100%" stop-color="#2878C8"/>
+    </linearGradient>
+    
+    <!-- Top highlight -->
+    <radialGradient id="highlight1" cx="40%" cy="25%" r="30%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.7)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+
+    <!-- Secondary highlight -->
+    <radialGradient id="highlight2" cx="55%" cy="60%" r="25%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.25)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+
+    <!-- Outer sphere shadow/3D effect -->
+    <radialGradient id="sphereShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="80%" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="95%" stop-color="rgba(0,20,60,0.15)"/>
+      <stop offset="100%" stop-color="rgba(0,20,60,0.3)"/>
+    </radialGradient>
+
+    <!-- Drop shadow filter -->
+    <filter id="dropShadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="rgba(0,20,60,0.15)"/>
+    </filter>
+  </defs>
+  
+  <!-- === ORB / SPHERE === -->
+  <g transform="translate(12, 8)">
+    <!-- Outer sphere ring -->
+    <circle cx="88" cy="88" r="86" fill="url(#outerSphere)" filter="url(#dropShadow)"/>
+    
+    <!-- 3D edge shadow on outer sphere -->
+    <circle cx="88" cy="88" r="86" fill="url(#sphereShadow)"/>
+    
+    <!-- Inner blue sphere -->
+    <circle cx="88" cy="88" r="72" fill="url(#innerSphere)"/>
+    
+    <!-- Crescent / wave shape - the dark blue "C" shape -->
+    <path d="
+      M 48,38 
+      C 28,58 22,88 32,118 
+      C 42,148 68,162 98,158 
+      C 78,165 52,158 35,138 
+      C 18,118 16,88 28,62 
+      C 34,48 44,38 48,38 Z
+    " fill="url(#crescentGrad)" opacity="0.95"/>
+    
+    <!-- Inner lighter crescent accent -->
+    <path d="
+      M 58,52
+      C 42,68 36,92 44,116
+      C 52,138 72,150 92,148
+      C 76,152 56,148 42,132
+      C 28,116 26,92 36,72
+      C 42,58 54,50 58,52 Z
+    " fill="#1A60A8" opacity="0.6"/>
+    
+    <!-- Top-left highlight (glossy reflection) -->
+    <ellipse cx="62" cy="52" rx="32" ry="26" fill="url(#highlight1)" transform="rotate(-20, 62, 52)"/>
+    
+    <!-- Small bright highlight dot -->
+    <circle cx="50" cy="40" r="5" fill="rgba(255,255,255,0.8)"/>
+    <circle cx="58" cy="36" r="3" fill="rgba(255,255,255,0.6)"/>
+    
+    <!-- Lower-right subtle highlight -->
+    <ellipse cx="108" cy="108" rx="24" ry="20" fill="url(#highlight2)" transform="rotate(30, 108, 108)"/>
+  </g>
+
+  <!-- === TEXT === -->
+  <!-- "larity" - positioned to the right of the orb, baseline aligned -->
+  <text x="192" y="128" 
+        font-family="'Nunito Sans', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" 
+        font-size="96" 
+        font-weight="700" 
+        fill="#0B1D3A" 
+        letter-spacing="-1">larity</text>
+  
+  <!-- "Health Benefits" - below, lighter weight, wider spacing -->
+  <text x="196" y="186" 
+        font-family="'Nunito Sans', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" 
+        font-size="48" 
+        font-weight="400" 
+        fill="#0B1D3A" 
+        letter-spacing="2">Health Benefits</text>
+</svg>
