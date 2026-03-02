@@ -24,7 +24,7 @@ export default function AboutSection() {
       <div className="mx-auto max-w-5xl">
 
         {/* Heading */}
-        <h2 className="mb-16 text-center text-3xl font-bold text-navy sm:text-4xl">
+        <h2 className="mb-16 text-center text-3xl font-bold text-dark-blue sm:text-4xl">
           How Clarity Was Built
         </h2>
 
@@ -37,7 +37,7 @@ export default function AboutSection() {
             className="absolute left-8 top-8 hidden h-px w-[calc(100%-4rem)] sm:block"
             style={{
               backgroundImage:
-                "repeating-linear-gradient(to right, #00D4E0 0, #00D4E0 8px, transparent 8px, transparent 16px)",
+                "repeating-linear-gradient(to right, #00C8E8 0, #00C8E8 8px, transparent 8px, transparent 16px)",
             }}
           />
 
@@ -53,7 +53,7 @@ export default function AboutSection() {
                     className="absolute left-8 top-16 block h-[calc(100%+2rem)] w-px sm:hidden"
                     style={{
                       backgroundImage:
-                        "repeating-linear-gradient(to bottom, #00D4E0 0, #00D4E0 8px, transparent 8px, transparent 16px)",
+                        "repeating-linear-gradient(to bottom, #00C8E8 0, #00C8E8 8px, transparent 8px, transparent 16px)",
                     }}
                   />
                 )}
@@ -62,13 +62,13 @@ export default function AboutSection() {
                 <div className="flex w-full items-start gap-6 text-left sm:flex-col sm:items-center sm:text-center">
 
                   {/* Icon circle */}
-                  <div className="relative z-10 flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-navy">
-                    <Icon className="text-accent" size={28} strokeWidth={1.75} />
+                  <div className="relative z-10 flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-dark-blue">
+                    <Icon className="text-accent-teal" size={28} strokeWidth={1.75} />
                   </div>
 
                   {/* Text */}
                   <div className="pb-12 sm:pb-0 sm:px-4">
-                    <h3 className="mb-2 text-lg font-bold text-navy">{step.title}</h3>
+                    <h3 className="mb-2 text-lg font-bold text-dark-blue">{step.title}</h3>
                     <p className="text-sm leading-relaxed text-gray-500">{step.body}</p>
                   </div>
 

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import LogoDark from "./components/logos/LogoDark";
 import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
 import ResultsSection from "./components/ResultsSection";
@@ -15,27 +15,22 @@ export default function Home() {
   return (
     <>
       {/* Hero — above fold, no fade wrapper */}
-      <section className="bg-navy w-full px-6 py-24">
+      <section className="bg-dark-blue w-full px-6 py-24">
         <div className="mx-auto flex max-w-5xl flex-col items-center text-center">
 
           {/* Logo */}
-          <Image
-            src="/images/clarity_logo_white_2x.png"
-            alt="Clarity Health Benefits"
-            width={350}
-            height={105}
-            style={{ height: "auto", maxWidth: "min(350px, 70vw)" }}
-            priority
-          />
+          <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+            <LogoDark style={{ width: "500px", maxWidth: "90vw", height: "auto", display: "block" }} priority />
+          </div>
 
           {/* Accent divider */}
-          <div className="mt-8 h-px w-[200px] bg-accent" />
+          <div className="mt-8 h-px w-[200px] bg-accent-teal" />
 
           {/* Heading */}
           <h1 className="mt-10 text-3xl font-light tracking-wide text-white sm:text-4xl md:text-5xl">
             Where others blur the line,
           </h1>
-          <h2 className="mt-2 text-4xl font-bold tracking-wide text-accent sm:text-5xl md:text-6xl">
+          <h2 className="mt-2 text-4xl font-bold tracking-wide text-accent-teal sm:text-5xl md:text-6xl">
             we clear it.
           </h2>
 
@@ -48,7 +43,7 @@ export default function Home() {
               >
                 {/* Vertical divider — desktop only, between columns */}
                 {i > 0 && (
-                  <div className="hidden h-16 w-px shrink-0 bg-accent sm:block" />
+                  <div className="hidden h-16 w-px shrink-0 bg-accent-teal sm:block" />
                 )}
                 <p className="flex-1 px-6 py-6 text-base font-medium leading-relaxed text-white sm:px-8 sm:py-0">
                   {prop}

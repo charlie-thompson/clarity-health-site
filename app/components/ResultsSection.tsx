@@ -30,13 +30,13 @@ const breakdown = [
   {
     amount: "$321,834",
     program: "Patient Assistance (PAP)",
-    sub: "With a limited single brand focus",
+    sub: "Limited single brand focus",
   },
 ];
 
 export default function ResultsSection() {
   return (
-    <section className="bg-navy px-6 py-24">
+    <section className="bg-dark-blue px-6 py-24">
       <div className="mx-auto max-w-6xl">
 
         {/* Section header */}
@@ -44,7 +44,7 @@ export default function ResultsSection() {
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
             2025 Client Case Study
           </h2>
-          <p className="mt-2 text-lg font-semibold text-accent">
+          <p className="mt-2 text-lg font-semibold text-accent-teal">
             3,500-member labor union
           </p>
         </div>
@@ -55,8 +55,8 @@ export default function ResultsSection() {
           {/* Left — stat blocks */}
           <div className="flex flex-col gap-10">
             {stats.map(({ value, label, sub }) => (
-              <div key={value} className="border-l-2 border-accent pl-6">
-                <p className="text-5xl font-bold text-accent sm:text-6xl">
+              <div key={value} className="border-l-2 border-accent-teal pl-6">
+                <p className="text-5xl font-bold text-accent-teal sm:text-6xl">
                   {value}
                 </p>
                 <p className="mt-2 text-lg font-semibold text-white">{label}</p>
@@ -82,7 +82,7 @@ export default function ResultsSection() {
                     </p>
                     <p className="mt-0.5 text-sm text-gray-400">{sub}</p>
                   </div>
-                  <p className="text-2xl font-bold text-accent sm:shrink-0">
+                  <p className="text-2xl font-bold text-accent-teal sm:shrink-0">
                     {amount}
                   </p>
                 </div>
@@ -90,8 +90,8 @@ export default function ResultsSection() {
             </div>
 
             {/* Pill badge */}
-            <div className="mt-8 inline-flex items-center rounded-full border border-accent/40 bg-accent/10 px-4 py-1.5">
-              <span className="text-sm font-semibold text-accent">
+            <div className="mt-8 inline-flex items-center rounded-full border border-accent-teal/40 bg-accent-teal/10 px-4 py-1.5">
+              <span className="text-sm font-semibold text-accent-teal">
                 $37 PMPM Saved · 3 Programs
               </span>
             </div>
@@ -99,12 +99,16 @@ export default function ResultsSection() {
 
         </div>
 
-        {/* Full-width banner */}
-        <div className="mt-14 rounded-xl bg-white/5 px-8 py-6 text-center">
+        {/* Full-width callout banner */}
+        <div className="mt-14 flex flex-col items-center justify-between gap-4 rounded-xl bg-white/5 px-8 py-6 text-center sm:flex-row sm:text-left">
           <p className="text-sm font-medium text-white sm:text-base">
-            ⚡ GLP-1 utilization rose 275% (+$750K spend) — fully managed
-            without a net increase in drug cost
+            ⚡ GLP-1 utilization rose 275% (+$750K spend) — fully managed without a net increase in drug cost
           </p>
+          <div className="shrink-0 rounded-full bg-accent-teal/15 px-5 py-1.5">
+            <span className="text-sm font-bold uppercase tracking-wide text-accent-teal">
+              $37 PMPM Saved · 3 Programs
+            </span>
+          </div>
         </div>
 
       </div>
