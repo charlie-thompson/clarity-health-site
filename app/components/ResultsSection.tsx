@@ -1,16 +1,27 @@
+import CountUp from "./CountUp";
+
 const stats = [
   {
-    value: "$2.69M",
+    prefix: "$",
+    to: 2.69,
+    suffix: "M",
+    decimals: 2,
     label: "Total Cost Containment Savings",
     sub: "Copay Max · International Pharmacy · PAP",
   },
   {
-    value: "+50%",
+    prefix: "+",
+    to: 50,
+    suffix: "%",
+    decimals: 0,
     label: "Rebate Growth Year-Over-Year",
     sub: "$3.17M in total rebates returned to the plan",
   },
   {
-    value: "94%",
+    prefix: "",
+    to: 94,
+    suffix: "%",
+    decimals: 0,
     label: "Member Satisfaction Rating",
     sub: "Prompt, Personalized, Problem-Solving Service",
   },
@@ -36,7 +47,7 @@ const breakdown = [
 
 export default function ResultsSection() {
   return (
-    <section className="bg-dark-blue px-6 py-24">
+    <section className="relative bg-dark-blue px-6 py-24">
       <div className="mx-auto max-w-6xl">
 
         {/* Section header */}
@@ -54,10 +65,10 @@ export default function ResultsSection() {
 
           {/* Left — stat blocks */}
           <div className="flex flex-col gap-10">
-            {stats.map(({ value, label, sub }) => (
-              <div key={value} className="border-l-2 border-accent-teal pl-6">
+            {stats.map(({ prefix, to, suffix, decimals, label, sub }) => (
+              <div key={label} className="border-l-2 border-accent-teal pl-6">
                 <p className="text-5xl font-bold text-accent-teal sm:text-6xl">
-                  {value}
+                  <CountUp prefix={prefix} to={to} suffix={suffix} decimals={decimals} />
                 </p>
                 <p className="mt-2 text-lg font-semibold text-white">{label}</p>
                 <p className="mt-1 text-sm text-gray-400">{sub}</p>

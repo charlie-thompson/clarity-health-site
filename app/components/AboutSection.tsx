@@ -20,7 +20,7 @@ const steps = [
 
 export default function AboutSection() {
   return (
-    <section className="bg-white px-6 py-24">
+    <section className="relative bg-white px-6 pt-24 pb-56">
       <div className="mx-auto max-w-5xl">
 
         {/* Heading */}
@@ -61,8 +61,8 @@ export default function AboutSection() {
                 {/* Mobile layout: icon + content side-by-side aligned left */}
                 <div className="flex w-full items-start gap-6 text-left sm:flex-col sm:items-center sm:text-center">
 
-                  {/* Icon circle */}
-                  <div className="relative z-10 flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-dark-blue">
+                  {/* Icon circle with ring */}
+                  <div className="icon-ring relative z-10 flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-dark-blue">
                     <Icon className="text-accent-teal" size={28} strokeWidth={1.75} />
                   </div>
 
@@ -79,6 +79,12 @@ export default function AboutSection() {
 
         </div>
       </div>
+      {/* Section bottom gradient → Services (#EBF7FC) */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute bottom-0 left-0 right-0 h-48"
+        style={{ background: "linear-gradient(to bottom, transparent, #EBF7FC)" }}
+      />
     </section>
   );
 }

@@ -77,14 +77,14 @@ const services: Service[] = [
 
 export default function ServicesSection() {
   return (
-    <section className="relative bg-light-bg px-6 py-24">
+    <section className="toolkit-section relative px-6 py-24">
       <div className="mx-auto max-w-6xl">
 
         {/* Heading */}
         <h2 className="text-center text-3xl font-bold text-dark-blue sm:text-4xl">
           Our Cost Containment Toolkit — Your Programs, Your Plan
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-center text-base leading-relaxed text-gray-500">
+        <p className="mx-auto mt-4 max-w-2xl text-center text-base leading-relaxed text-dark-blue/70">
           No two plans are alike. Choose only the programs that fit your
           population, budget, and goals — with full transparency and contractual
           savings guarantees.
@@ -95,8 +95,17 @@ export default function ServicesSection() {
           {services.map(({ Icon, title, description }) => (
             <div
               key={title}
-              className="service-card service-card-item fade-in-section relative flex flex-col rounded-2xl bg-white py-7 pl-7 pr-6 shadow-sm"
+              className="service-card service-card-item fade-in-section relative flex flex-col rounded-2xl bg-white py-7 pl-7 pr-6"
             >
+              {/* Top gradient bar */}
+              <div
+                className="absolute left-0 top-0 h-1 w-full"
+                style={{
+                  background: "linear-gradient(to right, #00C8E8, #0673BC)",
+                  borderTopLeftRadius: "1rem",
+                  borderTopRightRadius: "1rem",
+                }}
+              />
               {/* Left gradient border — 4px, rounded to match card corners */}
               <div
                 className="service-card-border absolute left-0 top-0 h-full w-1 rounded-l-2xl"
@@ -107,7 +116,7 @@ export default function ServicesSection() {
 
               {/* Icon square */}
               <div
-                className="mb-5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl"
+                className="service-icon mb-5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl"
                 style={{ background: "rgba(0, 200, 232, 0.10)" }}
               >
                 <Icon

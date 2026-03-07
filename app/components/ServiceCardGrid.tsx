@@ -21,7 +21,7 @@ export default function ServiceCardGrid({ children }: { children: ReactNode }) {
           observer.unobserve(container);
         }
       },
-      { threshold: 0.05 }
+      { threshold: 0 }
     );
 
     observer.observe(container);

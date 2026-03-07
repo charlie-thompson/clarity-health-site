@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
-import LogoLight from "./logos/LogoLight";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -21,10 +21,17 @@ export default function Navbar() {
           : "bg-white shadow-none"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-0">
 
         <Link href="/" aria-label="Clarity Health Benefits — home">
-          <LogoLight style={{ height: "44px", width: "auto" }} priority />
+          <Image
+            src="/images/clarity-orb-icon-final.svg"
+            alt="Clarity Health Benefits"
+            width={98}
+            height={98}
+            priority
+            unoptimized
+          />
         </Link>
 
         <nav>

@@ -12,7 +12,7 @@ export default function LogoIcon({
 }) {
   return (
     <Image
-      src="/images/clarity-icon.svg"
+      src="/images/clarity-orb-icon-final.svg"
       alt="Clarity Health Benefits"
       width={100}
       height={100}

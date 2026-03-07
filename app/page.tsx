@@ -15,21 +15,21 @@ export default function Home() {
   return (
     <>
       {/* Hero — above fold, no fade wrapper */}
-      <section className="bg-dark-blue w-full px-6 py-24">
-        <div className="mx-auto flex max-w-5xl flex-col items-center text-center">
+      <section className="relative bg-dark-blue w-full px-6 py-24">
+<div className="relative z-20 mx-auto flex max-w-5xl flex-col items-center text-center">
 
           {/* Logo */}
           <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
             <LogoDark style={{ width: "500px", maxWidth: "90vw", height: "auto", display: "block" }} priority />
           </div>
 
-          {/* Accent divider */}
-          <div className="mt-8 h-px w-[200px] bg-accent-teal" />
-
-          {/* Heading */}
-          <h1 className="mt-10 text-3xl font-light tracking-wide text-white sm:text-4xl md:text-5xl">
-            Where others blur the line,
-          </h1>
+          {/* Accent divider + first tagline line — grouped so divider spans exact text width */}
+          <div className="mt-8 flex w-fit flex-col items-stretch">
+            <div className="h-px bg-accent-teal" />
+            <h1 className="mt-6 text-3xl font-light tracking-wide text-white sm:text-4xl md:text-5xl">
+              Where others <span style={{ filter: "blur(1.5px)" }}>blur</span> the line,
+            </h1>
+          </div>
           <h2 className="mt-2 text-4xl font-bold tracking-wide text-accent-teal sm:text-5xl md:text-6xl">
             we clear it.
           </h2>
