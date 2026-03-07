@@ -25,10 +25,11 @@ export default function Navbar() {
 
         <Link href="/" aria-label="Clarity Health Benefits — home">
           <Image
-            src="/images/clarity-orb-icon-final.svg"
+            src="/images/clarity-logo-light@400.png"
             alt="Clarity Health Benefits"
-            width={98}
-            height={98}
+            width={400}
+            height={100}
+            className="h-[50px] w-auto"
             priority
             unoptimized
           />

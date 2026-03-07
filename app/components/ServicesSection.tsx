@@ -85,17 +85,16 @@ export default function ServicesSection() {
           Our Cost Containment Toolkit — Your Programs, Your Plan
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-base leading-relaxed text-dark-blue/70">
-          No two plans are alike. Choose only the programs that fit your
-          population, budget, and goals — with full transparency and contractual
-          savings guarantees.
+          Our programs are completely tailored and customizable to each client's needs and specific membership. Complete transparency, with a common goal of decreasing cost and increasing satisfaction.
         </p>
 
         {/* Stagger-animated card grid */}
         <ServiceCardGrid>
           {services.map(({ Icon, title, description }) => (
+
             <div
               key={title}
-              className="service-card service-card-item fade-in-section relative flex flex-col rounded-2xl bg-white py-7 pl-7 pr-6"
+              className="group service-card service-card-item fade-in-section relative flex flex-col rounded-2xl bg-white py-7 pl-7 pr-6"
             >
               {/* Top gradient bar */}
               <div
@@ -136,9 +135,31 @@ export default function ServicesSection() {
               >
                 {description}
               </p>
+
+              {/* Hover-reveal contact link */}
+              <div className="max-h-0 overflow-hidden transition-all duration-300 group-hover:max-h-12">
+                <div className="mt-4 border-t border-accent-teal/20 pt-3">
+                  <a
+                    href="mailto:info@clarityhealthbenefits.com"
+                    className="text-xs font-semibold text-accent-teal hover:underline"
+                  >
+                    Schedule a free assessment →
+                  </a>
+                </div>
+              </div>
             </div>
           ))}
         </ServiceCardGrid>
+
+        {/* Section CTA */}
+        <div className="mt-14 text-center">
+          <a
+            href="mailto:info@clarityhealthbenefits.com"
+            className="inline-block rounded-full bg-accent-teal px-10 py-4 text-base font-semibold text-dark-blue transition-colors duration-200 hover:bg-light-blue"
+          >
+            Get in Touch
+          </a>
+        </div>
 
       </div>
     </section>

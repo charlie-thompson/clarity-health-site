@@ -31,9 +31,9 @@ export default function OriginSection() {
         <p className="text-center text-xs font-semibold uppercase tracking-[0.2em] text-accent-teal">
           Our Story
         </p>
-        <h2 className="mt-3 mb-20 text-center text-3xl font-bold text-dark-blue sm:text-4xl">
+        <h1 className="mt-3 mb-20 text-center text-5xl font-bold text-dark-blue sm:text-6xl">
           How Clarity Was Built
-        </h2>
+        </h1>
 
         {/* Timeline */}
         <div className="relative flex flex-col sm:flex-row sm:items-start">
@@ -73,10 +73,13 @@ export default function OriginSection() {
 
                 {/* Text block */}
                 <div className="pb-12 sm:pb-0 sm:px-6">
-                  <p className="mb-1 text-xs font-bold uppercase tracking-widest text-accent-teal">
+                  <p
+                    aria-hidden
+                    className="select-none text-6xl font-bold leading-none text-light-blue/25 sm:text-7xl"
+                  >
                     {number}
                   </p>
-                  <h3 className="mb-2 text-lg font-bold text-dark-blue">{title}</h3>
+                  <h3 className="mb-2 mt-2 text-lg font-bold text-dark-blue">{title}</h3>
                   <p className="text-sm leading-relaxed text-gray-500">{body}</p>
                 </div>
 

@@ -1,7 +1,24 @@
+import Image from "next/image";
+
 export default function MissionSection() {
   return (
-    <section className="bg-dark-blue px-6 py-24 text-center">
-      <div className="mx-auto max-w-3xl">
+    <section className="relative overflow-hidden px-6 py-24 text-center">
+
+      {/* Background pharmacy photo */}
+      <Image
+        src="/pharmacy.jpg"
+        alt=""
+        fill
+        className="object-cover"
+        aria-hidden
+        sizes="100vw"
+      />
+
+      {/* Dark navy overlay */}
+      <div className="absolute inset-0 bg-dark-blue/82" aria-hidden />
+
+      {/* Content */}
+      <div className="relative z-10 mx-auto max-w-3xl">
 
         <p className="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-accent-teal">
           Our Mission

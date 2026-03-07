@@ -122,6 +122,16 @@ export default function ResultsSection() {
           </div>
         </div>
 
+        {/* Section CTA */}
+        <div className="mt-12 text-center">
+          <a
+            href="mailto:info@clarityhealthbenefits.com"
+            className="inline-block rounded-full bg-accent-teal px-10 py-4 text-base font-semibold text-dark-blue transition-colors duration-200 hover:bg-light-blue"
+          >
+            See What We Can Save Your Plan
+          </a>
+        </div>
+
       </div>
     </section>
   );

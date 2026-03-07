@@ -3,6 +3,7 @@ import FadeInSection from "../components/FadeInSection";
 import OriginSection from "../components/OriginSection";
 import MissionSection from "../components/MissionSection";
 import FoundersSection from "../components/FoundersSection";
+import FamilySection from "../components/FamilySection";
 
 export const metadata: Metadata = {
   title: "About — Clarity Health Benefits",
@@ -22,6 +23,8 @@ export default function AboutPage() {
       <FadeInSection>
         <FoundersSection />
       </FadeInSection>
+
+      <FamilySection />
     </>
   );
 }

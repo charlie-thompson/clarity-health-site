@@ -22,11 +22,15 @@ const founders: Founder[] = [
     ],
   },
   {
-    name: "John Olsen",
+    name: "Dr. John Olsen",
     title: "Co-Founder",
     initials: "JO",
     photoFilename: "team-john-olsen.jpg",
-    bio: null,
+    bio: [
+      "20+ years advocating for patients and clients in the pharmacy industry",
+      "Built and operated multiple successful healthcare companies, always focused on delivering high-quality, high-touch, affordable services",
+      "Clarity Health Benefits was born from this same mission — decidedly focused on providing a fresh perspective in an outdated industry",
+    ],
   },
   {
     name: "Stephanie",

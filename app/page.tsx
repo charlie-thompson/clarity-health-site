@@ -1,6 +1,8 @@
 import LogoDark from "./components/logos/LogoDark";
+import TrustBar from "./components/TrustBar";
 import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
+import GuaranteedSection from "./components/GuaranteedSection";
 import ResultsSection from "./components/ResultsSection";
 import ContactSection from "./components/ContactSection";
 import FadeInSection from "./components/FadeInSection";
@@ -55,12 +57,18 @@ export default function Home() {
         </div>
       </section>
 
+      <TrustBar />
+
       <FadeInSection>
         <AboutSection />
       </FadeInSection>
 
       <FadeInSection>
         <ServicesSection />
+      </FadeInSection>
+
+      <FadeInSection>
+        <GuaranteedSection />
       </FadeInSection>
 
       <FadeInSection>
