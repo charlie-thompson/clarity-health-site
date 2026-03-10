@@ -126,7 +126,7 @@ export default function ServicesSection() {
               </div>
 
               {/* Title */}
-              <h3 className="mb-2 text-[15px] font-bold text-dark-blue">{title}</h3>
+              <h3 className="mb-2 text-xl font-bold text-dark-blue">{title}</h3>
 
               {/* Description */}
               <p

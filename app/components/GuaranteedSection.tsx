@@ -14,12 +14,8 @@ const cards = [
   {
     title: "Design",
     body: null,
-    items: [
-      "Formulary & Clinical Design Collaboration",
-      "High-Touch Copay Maximization",
-      "International Pharmacy Coordination",
-      "PAP Program Management",
-    ],
+    items: null,
+    body: "Tailored clinical program design — including formulary collaboration, copay maximization, international pharmacy coordination, and patient assistance management — built around your plan's specific needs.",
   },
 ];
 

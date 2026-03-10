@@ -9,13 +9,12 @@ export default function Footer() {
           alt="Clarity Health Benefits"
           width={400}
           height={100}
-          className="h-auto w-36"
+          className="h-auto w-48"
           unoptimized
         />
         <p className="text-sm text-gray-400">
           © 2026 Clarity Health Benefits. All rights reserved.
         </p>
-        <p className="text-sm text-gray-400">Confidential</p>
       </div>
     </footer>
   );

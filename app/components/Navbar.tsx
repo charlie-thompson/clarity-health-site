@@ -29,7 +29,7 @@ export default function Navbar() {
             alt="Clarity Health Benefits"
             width={400}
             height={100}
-            className="h-[50px] w-auto"
+            className="h-[66px] w-auto"
             priority
             unoptimized
           />
@@ -38,7 +38,7 @@ export default function Navbar() {
         <nav>
           <Link
             href="/about"
-            className="text-sm font-semibold text-dark-blue transition-colors duration-200 hover:text-accent-teal"
+            className="text-base font-semibold text-dark-blue transition-colors duration-200 hover:text-accent-teal"
           >
             About
           </Link>
