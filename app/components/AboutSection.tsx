@@ -2,19 +2,19 @@ import { ClipboardList, ShieldCheck, Puzzle } from "lucide-react";
 
 const steps = [
   {
-    number: "01",
+    number: "1",
     Icon: ClipboardList,
     title: "A Broken System.",
     body: "Three pharmacists spent years watching legacy PBMs obscure costs, pocket rebates, and leave plan sponsors with zero flexibility — paying more every year.",
   },
   {
-    number: "02",
+    number: "2",
     Icon: ShieldCheck,
     title: "One Clear Mandate.",
     body: "The industry needed a PBM built to work for the client — not the middleman. Total transparency, full savings pass-through, programs tailored to real needs.",
   },
   {
-    number: "03",
+    number: "3",
     Icon: Puzzle,
     title: "So, We Built Clarity.",
     body: "No legacy systems. No hidden layers. A clean-slate, pharmacist-designed PBM built around contractual transparency, à la carte cost containment, and high-touch member support.",
