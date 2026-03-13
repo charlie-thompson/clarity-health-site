@@ -132,7 +132,7 @@ export default function ServicesSection() {
               <div className="max-h-0 overflow-hidden transition-all duration-300 group-hover:max-h-12">
                 <div className="mt-4 border-t border-accent-teal/20 pt-3">
                   <a
-                    href="mailto:info@clarityhealthbenefits.com"
+                    href="mailto:support@clarityhealthbenefits.com"
                     className="text-xs font-semibold text-accent-teal hover:underline"
                   >
                     Schedule a free assessment →
@@ -146,10 +146,10 @@ export default function ServicesSection() {
         {/* Section CTA */}
         <div className="mt-14 text-center">
           <a
-            href="mailto:info@clarityhealthbenefits.com"
+            href="mailto:support@clarityhealthbenefits.com"
             className="inline-block rounded-full bg-accent-teal px-10 py-4 text-base font-semibold text-dark-blue transition-colors duration-200 hover:bg-light-blue"
           >
-            Get in Touch
+            Get a Demo
           </a>
         </div>
 

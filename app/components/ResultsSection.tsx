@@ -115,10 +115,10 @@ export default function ResultsSection() {
         {/* Section CTA */}
         <div className="mt-12 text-center">
           <a
-            href="mailto:info@clarityhealthbenefits.com"
+            href="mailto:support@clarityhealthbenefits.com"
             className="inline-block rounded-full bg-accent-teal px-10 py-4 text-base font-semibold text-dark-blue transition-colors duration-200 hover:bg-light-blue"
           >
-            See What We Can Save Your Plan
+            Get a Demo
           </a>
         </div>
 
