@@ -17,7 +17,7 @@ const cards = [
 
 export default function GuaranteedSection() {
   return (
-    <section className="bg-white px-6 py-24">
+    <section className="bg-light-gray px-6 py-28">
       <div className="mx-auto max-w-5xl text-center">
 
         {/* Eyebrow */}

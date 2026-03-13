@@ -47,7 +47,7 @@ const breakdown = [
 
 export default function ResultsSection() {
   return (
-    <section className="relative bg-dark-blue px-6 pb-24 pt-14">
+    <section className="relative bg-light-gray px-6 py-28">
       <div className="mx-auto max-w-6xl">
 
         {/* Two-column body */}
@@ -60,28 +60,28 @@ export default function ResultsSection() {
                 <p className="text-5xl font-bold text-accent-teal sm:text-6xl">
                   <CountUp prefix={prefix} to={to} suffix={suffix} decimals={decimals} />
                 </p>
-                <p className="mt-2 text-lg font-semibold text-white">{label}</p>
-                <p className="mt-1 text-sm text-gray-400">{sub}</p>
+                <p className="mt-2 text-lg font-semibold text-dark-blue">{label}</p>
+                <p className="mt-1 text-sm text-[#4A5568]">{sub}</p>
               </div>
             ))}
           </div>
 
           {/* Right — program breakdown */}
           <div>
-            <h3 className="mb-8 text-xl font-bold text-white">
+            <h3 className="mb-8 text-xl font-bold text-dark-blue">
               Program Breakdown
             </h3>
             <div className="flex flex-col gap-7">
               {breakdown.map(({ amount, program, sub }) => (
                 <div
                   key={program}
-                  className="flex flex-col gap-1 border-b border-white/10 pb-7 last:border-0 last:pb-0 sm:flex-row sm:items-start sm:justify-between sm:gap-6"
+                  className="flex flex-col gap-1 border-b border-dark-blue/10 pb-7 last:border-0 last:pb-0 sm:flex-row sm:items-start sm:justify-between sm:gap-6"
                 >
                   <div>
-                    <p className="text-base font-semibold text-white">
+                    <p className="text-base font-semibold text-dark-blue">
                       {program}
                     </p>
-                    <p className="mt-0.5 text-sm text-gray-400">{sub}</p>
+                    <p className="mt-0.5 text-sm text-[#4A5568]">{sub}</p>
                   </div>
                   <p className="text-2xl font-bold text-accent-teal sm:shrink-0">
                     {amount}
@@ -101,8 +101,8 @@ export default function ResultsSection() {
         </div>
 
         {/* Full-width callout banner */}
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 rounded-xl bg-white/5 px-8 py-6 text-center sm:flex-row sm:text-left">
-          <p className="text-sm font-medium text-white sm:text-base">
+        <div className="mt-14 flex flex-col items-center justify-between gap-4 rounded-xl border border-dark-blue/10 bg-white px-8 py-6 text-center shadow-sm sm:flex-row sm:text-left">
+          <p className="text-sm font-medium text-dark-blue sm:text-base">
             ⚡ GLP-1 utilization rose 275% (+$750K spend) — fully managed without a net increase in drug cost
           </p>
           <div className="shrink-0 rounded-full bg-accent-teal/15 px-5 py-1.5">

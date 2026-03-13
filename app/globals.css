@@ -6,6 +6,7 @@
   --color-light-blue: #4CC5F4;
   --color-accent-teal: #00C8E8;
   --color-light-bg: #F0F7FA;
+  --color-light-gray: #F7F9FC;
 }
 
 @theme inline {
@@ -19,7 +20,13 @@ html {
 
 body {
   background: #ffffff;
-  color: #171717;
+  color: #4A5568;
+}
+
+/* ─── Page hero gradient ──────────────────────────────────────────────────── */
+
+.hero-gradient {
+  background: linear-gradient(135deg, #0B1F3A 0%, #0e3568 100%);
 }
 
 /* ─── Page-level enter transition ────────────────────────────────────────── */

@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-dark-blue w-full px-6 py-24">
+      <section className="hero-gradient relative w-full px-6 py-24">
         <div className="relative z-20 mx-auto flex max-w-5xl flex-col items-center text-center">
 
           {/* Logo */}

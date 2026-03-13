@@ -11,7 +11,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Page hero */}
-      <section className="bg-dark-blue px-6 py-20 text-center">
+      <section className="hero-gradient px-6 py-20 text-center">
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-teal">
             What We Offer

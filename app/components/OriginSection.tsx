@@ -24,7 +24,7 @@ const steps: { Icon: LucideIcon; number: string; title: string; body: string }[]
 
 export default function OriginSection() {
   return (
-    <section className="bg-white px-6 py-24">
+    <section className="bg-white px-6 py-28">
       <div className="mx-auto max-w-5xl">
 
         {/* Section heading */}

@@ -11,7 +11,7 @@ export default function CaseStudyPage() {
   return (
     <>
       {/* Page hero */}
-      <section className="bg-dark-blue px-6 pb-0 pt-20 text-center">
+      <section className="hero-gradient px-6 py-20 text-center">
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-teal">
             Real Results
@@ -23,12 +23,9 @@ export default function CaseStudyPage() {
             A 3,500-member labor union. Three cost containment programs. $2.69M
             in documented savings — and a 94% member satisfaction rating.
           </p>
-          {/* Decorative divider that bleeds into the results section below */}
-          <div className="mt-14 h-px w-full bg-white/10" />
         </div>
       </section>
 
-      {/* Full results section — dark navy bg continues seamlessly */}
       <ResultsSection />
     </>
   );

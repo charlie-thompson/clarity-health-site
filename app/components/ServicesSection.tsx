@@ -77,7 +77,7 @@ const services: Service[] = [
 
 export default function ServicesSection() {
   return (
-    <section className="bg-white relative px-6 py-24">
+    <section className="bg-light-gray relative px-6 py-28">
       <div className="mx-auto max-w-6xl">
 
         {/* Stagger-animated card grid */}
