@@ -30,7 +30,7 @@ export default function OriginSection() {
         {/* Section heading */}
         <h2 className="mb-20 text-center text-5xl font-bold text-dark-blue sm:text-6xl">
           How Clarity Was Built
-        </h1>
+        </h2>
 
         {/* Timeline */}
         <div className="relative flex flex-col sm:flex-row sm:items-start">
