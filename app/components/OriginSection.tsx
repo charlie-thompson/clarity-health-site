@@ -27,11 +27,8 @@ export default function OriginSection() {
     <section className="bg-white px-6 py-24">
       <div className="mx-auto max-w-5xl">
 
-        {/* Eyebrow + heading */}
-        <p className="text-center text-xs font-semibold uppercase tracking-[0.2em] text-accent-teal">
-          Our Story
-        </p>
-        <h1 className="mt-3 mb-20 text-center text-5xl font-bold text-dark-blue sm:text-6xl">
+        {/* Section heading */}
+        <h2 className="mb-20 text-center text-5xl font-bold text-dark-blue sm:text-6xl">
           How Clarity Was Built
         </h1>
 

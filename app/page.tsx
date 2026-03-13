@@ -1,11 +1,5 @@
 import LogoDark from "./components/logos/LogoDark";
 import TrustBar from "./components/TrustBar";
-import AboutSection from "./components/AboutSection";
-import ServicesSection from "./components/ServicesSection";
-import GuaranteedSection from "./components/GuaranteedSection";
-import ResultsSection from "./components/ResultsSection";
-import ContactSection from "./components/ContactSection";
-import FadeInSection from "./components/FadeInSection";
 
 const valueProps = [
   "True Claim-Level Transparency and Pass-Through",
@@ -16,16 +10,16 @@ const valueProps = [
 export default function Home() {
   return (
     <>
-      {/* Hero — above fold, no fade wrapper */}
+      {/* Hero */}
       <section className="relative bg-dark-blue w-full px-6 py-24">
-<div className="relative z-20 mx-auto flex max-w-5xl flex-col items-center text-center">
+        <div className="relative z-20 mx-auto flex max-w-5xl flex-col items-center text-center">
 
           {/* Logo */}
           <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
             <LogoDark style={{ width: "500px", maxWidth: "90vw", height: "auto", display: "block" }} priority />
           </div>
 
-          {/* Accent divider + first tagline line — grouped so divider spans exact text width */}
+          {/* Accent divider + tagline */}
           <div className="mt-8 flex w-fit flex-col items-stretch">
             <div className="h-px bg-accent-teal" />
             <h1 className="mt-6 text-3xl font-light tracking-wide text-white sm:text-4xl md:text-5xl">
@@ -36,14 +30,13 @@ export default function Home() {
             we clear it.
           </h2>
 
-          {/* Value props */}
+          {/* 3-pillar value props */}
           <div className="mt-16 flex w-full flex-col items-stretch sm:flex-row">
             {valueProps.map((prop, i) => (
               <div
                 key={i}
                 className="flex flex-1 items-center border-b border-white/15 last:border-0 sm:border-0"
               >
-                {/* Vertical divider — desktop only, between columns */}
                 {i > 0 && (
                   <div className="hidden h-16 w-px shrink-0 bg-accent-teal sm:block" />
                 )}
@@ -58,26 +51,6 @@ export default function Home() {
       </section>
 
       <TrustBar />
-
-      <FadeInSection>
-        <AboutSection />
-      </FadeInSection>
-
-      <FadeInSection>
-        <ServicesSection />
-      </FadeInSection>
-
-      <FadeInSection>
-        <GuaranteedSection />
-      </FadeInSection>
-
-      <FadeInSection>
-        <ResultsSection />
-      </FadeInSection>
-
-      <FadeInSection>
-        <ContactSection />
-      </FadeInSection>
     </>
   );
 }

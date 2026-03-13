@@ -47,18 +47,8 @@ const breakdown = [
 
 export default function ResultsSection() {
   return (
-    <section className="relative bg-dark-blue px-6 py-24">
+    <section className="relative bg-dark-blue px-6 pb-24 pt-14">
       <div className="mx-auto max-w-6xl">
-
-        {/* Section header */}
-        <div className="mb-14 text-center">
-          <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            2025 Client Case Study
-          </h2>
-          <p className="mt-2 text-lg font-semibold text-accent-teal">
-            3,500-member labor union
-          </p>
-        </div>
 
         {/* Two-column body */}
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">

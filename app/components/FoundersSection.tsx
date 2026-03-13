@@ -54,11 +54,8 @@ export default function FoundersSection() {
     <section className="bg-light-bg px-6 py-24">
       <div className="mx-auto max-w-5xl">
 
-        {/* Eyebrow + heading */}
-        <p className="text-center text-xs font-semibold uppercase tracking-[0.2em] text-accent-teal">
-          Our Team
-        </p>
-        <h2 className="mt-3 mb-16 text-center text-3xl font-bold text-dark-blue sm:text-4xl">
+        {/* Section heading */}
+        <h2 className="mb-16 text-center text-3xl font-bold text-dark-blue sm:text-4xl">
           Meet the Founders
         </h2>
 

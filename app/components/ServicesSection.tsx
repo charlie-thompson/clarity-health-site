@@ -77,16 +77,8 @@ const services: Service[] = [
 
 export default function ServicesSection() {
   return (
-    <section className="toolkit-section relative px-6 py-24">
+    <section className="bg-white relative px-6 py-24">
       <div className="mx-auto max-w-6xl">
-
-        {/* Heading */}
-        <h2 className="text-center text-3xl font-bold text-dark-blue sm:text-4xl">
-          Our Cost Containment Toolkit — Your Programs, Your Plan
-        </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-center text-base leading-relaxed text-dark-blue/70">
-          Our programs are completely tailored and customizable to each client's needs and specific membership. Complete transparency, with a common goal of decreasing cost and increasing satisfaction.
-        </p>
 
         {/* Stagger-animated card grid */}
         <ServiceCardGrid>
