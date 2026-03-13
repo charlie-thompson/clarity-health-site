@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import OriginSection from "../../components/OriginSection";
 import GuaranteedSection from "../../components/GuaranteedSection";
 import FadeInSection from "../../components/FadeInSection";
@@ -31,6 +32,32 @@ export default function OurStoryPage() {
       {/* Origin timeline */}
       <FadeInSection>
         <OriginSection />
+      </FadeInSection>
+
+      {/* Pharmacy photo break */}
+      <FadeInSection>
+        <section className="bg-light-bg px-6 py-16">
+          <div className="mx-auto max-w-5xl">
+            <div className="relative h-64 w-full overflow-hidden rounded-3xl shadow-lg sm:h-80 lg:h-96">
+              <Image
+                src="/pharmacy.jpg"
+                alt="Pharmacists at work inside a Clarity-partnered pharmacy"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 80vw"
+              />
+              {/* Subtle dark gradient overlay for legibility if caption is added later */}
+              <div
+                aria-hidden
+                className="absolute inset-0 rounded-3xl"
+                style={{
+                  background:
+                    "linear-gradient(to top, rgba(0,45,92,0.35) 0%, transparent 60%)",
+                }}
+              />
+            </div>
+          </div>
+        </section>
       </FadeInSection>
 
       {/* Philosophy — Proven, Aligned & Guaranteed */}
