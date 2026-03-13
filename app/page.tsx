@@ -2,6 +2,7 @@ import Link from "next/link";
 import LogoDark from "./components/logos/LogoDark";
 import TrustBar from "./components/TrustBar";
 import FadeInSection from "./components/FadeInSection";
+import PageTransition from "./components/PageTransition";
 
 const valueProps = [
   "True Claim-Level Transparency and Pass-Through",
@@ -11,7 +12,7 @@ const valueProps = [
 
 export default function Home() {
   return (
-    <>
+    <PageTransition>
       {/* Hero */}
       <section className="hero-gradient relative w-full px-6 py-24">
         <div className="relative z-20 mx-auto flex max-w-5xl flex-col items-center text-center">
@@ -116,6 +117,6 @@ export default function Home() {
           </div>
         </section>
       </FadeInSection>
-    </>
+    </PageTransition>
   );
 }

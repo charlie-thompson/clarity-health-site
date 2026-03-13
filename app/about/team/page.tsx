@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import FoundersSection from "../../components/FoundersSection";
 import FadeInSection from "../../components/FadeInSection";
+import PageTransition from "../../components/PageTransition";
 
 export const metadata: Metadata = {
   title: "Our Team — Clarity Health Benefits",
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function TeamPage() {
   return (
-    <>
+    <PageTransition>
       {/* Page hero */}
       <section className="hero-gradient px-6 py-20 text-center">
         <div className="mx-auto max-w-3xl">
@@ -31,6 +32,6 @@ export default function TeamPage() {
       <FadeInSection>
         <FoundersSection />
       </FadeInSection>
-    </>
+    </PageTransition>
   );
 }

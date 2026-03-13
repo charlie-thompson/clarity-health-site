@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${quicksand.variable} font-sans antialiased`}>
         <Navbar />
-        <main className="page-enter">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

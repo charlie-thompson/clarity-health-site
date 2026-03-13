@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ServicesSection from "../components/ServicesSection";
+import PageTransition from "../components/PageTransition";
 
 export const metadata: Metadata = {
   title: "Services — Clarity Health Benefits",
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   return (
-    <>
+    <PageTransition>
       {/* Page hero */}
       <section className="hero-gradient px-6 py-20 text-center">
         <div className="mx-auto max-w-3xl">
@@ -30,6 +31,6 @@ export default function ServicesPage() {
 
       {/* 9-card grid */}
       <ServicesSection />
-    </>
+    </PageTransition>
   );
 }

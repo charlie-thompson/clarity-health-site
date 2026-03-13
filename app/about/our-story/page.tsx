@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import OriginSection from "../../components/OriginSection";
 import GuaranteedSection from "../../components/GuaranteedSection";
 import FadeInSection from "../../components/FadeInSection";
+import PageTransition from "../../components/PageTransition";
 
 export const metadata: Metadata = {
   title: "Our Story — Clarity Health Benefits",
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function OurStoryPage() {
   return (
-    <>
+    <PageTransition>
       {/* Page hero */}
       <section className="hero-gradient px-6 py-20 text-center">
         <div className="mx-auto max-w-3xl">
@@ -85,6 +86,6 @@ export default function OurStoryPage() {
       <FadeInSection>
         <GuaranteedSection />
       </FadeInSection>
-    </>
+    </PageTransition>
   );
 }
