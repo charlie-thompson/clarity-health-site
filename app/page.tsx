@@ -1,7 +1,7 @@
 import Link from "next/link";
 import LogoDark from "./components/logos/LogoDark";
 import TrustBar from "./components/TrustBar";
-import FadeInSection from "./components/FadeInSection";
+import ScrollReveal from "./components/ScrollReveal";
 import PageTransition from "./components/PageTransition";
 
 const valueProps = [
@@ -56,7 +56,7 @@ export default function Home() {
       <TrustBar />
 
       {/* Family full-bleed section */}
-      <FadeInSection>
+      <ScrollReveal>
         <section
           className="relative px-6 py-36 text-center"
           style={{
@@ -116,7 +116,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </FadeInSection>
+      </ScrollReveal>
     </PageTransition>
   );
 }

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import FoundersSection from "../../components/FoundersSection";
-import FadeInSection from "../../components/FadeInSection";
+import ScrollReveal from "../../components/ScrollReveal";
 import PageTransition from "../../components/PageTransition";
 
 export const metadata: Metadata = {
@@ -29,9 +29,9 @@ export default function TeamPage() {
       </section>
 
       {/* Founder cards */}
-      <FadeInSection>
+      <ScrollReveal>
         <FoundersSection />
-      </FadeInSection>
+      </ScrollReveal>
     </PageTransition>
   );
 }

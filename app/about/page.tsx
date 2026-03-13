@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import FadeInSection from "../components/FadeInSection";
+import ScrollReveal from "../components/ScrollReveal";
 import OriginSection from "../components/OriginSection";
 import MissionSection from "../components/MissionSection";
 import FoundersSection from "../components/FoundersSection";
@@ -16,13 +16,13 @@ export default function AboutPage() {
     <>
       <OriginSection />
 
-      <FadeInSection>
+      <ScrollReveal>
         <MissionSection />
-      </FadeInSection>
+      </ScrollReveal>
 
-      <FadeInSection>
+      <ScrollReveal>
         <FoundersSection />
-      </FadeInSection>
+      </ScrollReveal>
 
       <FamilySection />
     </>

@@ -1,8 +1,11 @@
+"use client";
+
+import ScrollReveal from "./ScrollReveal";
+
 interface Founder {
   name: string;
   title: string;
   initials: string;
-  /** Swap to <Image> once team-*.jpg files are added to /public/images/ */
   photoFilename: string;
   bio: string[] | null;
 }
@@ -54,42 +57,39 @@ export default function FoundersSection() {
     <section className="bg-light-bg px-6 py-24">
       <div className="mx-auto max-w-5xl">
 
-        {/* Section heading */}
-        <h2 className="mb-16 text-center text-3xl font-bold text-dark-blue sm:text-4xl">
-          Meet the Founders
-        </h2>
+        <ScrollReveal>
+          <h2 className="mb-16 text-center text-3xl font-bold text-dark-blue sm:text-4xl">
+            Meet the Founders
+          </h2>
+        </ScrollReveal>
 
-        {/* Founder grid */}
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
-          {founders.map(({ name, title, initials, bio }) => (
-            <div
-              key={name}
-              className="flex flex-col items-center rounded-2xl bg-white px-8 py-10 text-center shadow-sm"
-            >
-              {/* Avatar */}
-              <FounderAvatar initials={initials} />
+          {founders.map(({ name, title, initials, bio }, i) => (
+            <ScrollReveal key={name} delay={i * 0.1} className="flex flex-col">
+              <div className="flex flex-1 flex-col items-center rounded-2xl bg-white px-8 py-10 text-center shadow-sm">
 
-              {/* Name + title */}
-              <h3 className="mt-5 text-lg font-bold text-dark-blue">{name}</h3>
-              <p className="mt-1 text-sm font-semibold text-accent-teal">{title}</p>
+                <FounderAvatar initials={initials} />
 
-              {/* Divider */}
-              <div className="my-5 h-px w-10 bg-accent-teal/40" />
+                <h3 className="mt-5 text-lg font-bold text-dark-blue">{name}</h3>
+                <p className="mt-1 text-sm font-semibold text-accent-teal">{title}</p>
 
-              {/* Bio */}
-              {bio ? (
-                <ul className="space-y-2.5 text-left">
-                  {bio.map((point) => (
-                    <li key={point} className="flex items-start gap-2 text-sm leading-relaxed text-gray-500">
-                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-teal" />
-                      {point}
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p className="text-sm italic text-gray-400">Bio coming soon.</p>
-              )}
-            </div>
+                <div className="my-5 h-px w-10 bg-accent-teal/40" />
+
+                {bio ? (
+                  <ul className="space-y-2.5 text-left">
+                    {bio.map((point) => (
+                      <li key={point} className="flex items-start gap-2 text-sm leading-relaxed text-gray-500">
+                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-teal" />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-sm italic text-gray-400">Bio coming soon.</p>
+                )}
+
+              </div>
+            </ScrollReveal>
           ))}
         </div>
 

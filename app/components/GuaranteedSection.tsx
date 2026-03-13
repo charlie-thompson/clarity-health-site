@@ -1,4 +1,4 @@
-import FadeInSection from "./FadeInSection";
+import ScrollReveal from "./ScrollReveal";
 
 const cards = [
   {
@@ -34,10 +34,10 @@ export default function GuaranteedSection() {
           Our clients can rest confidently knowing our interests are aligned.
         </p>
 
-        {/* Cards — equal height via CSS grid row stretch, stagger-animated */}
+        {/* Staggered card grid */}
         <div className="mt-14 grid grid-cols-1 items-stretch gap-6 sm:grid-cols-3">
           {cards.map(({ title, body }, i) => (
-            <FadeInSection key={title} delay={i * 150} className="h-full">
+            <ScrollReveal key={title} delay={i * 0.15} className="h-full">
               <div className="flex h-full flex-col overflow-hidden rounded-2xl border border-dark-blue/15 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
 
                 {/* Cyan top accent bar */}
@@ -51,7 +51,7 @@ export default function GuaranteedSection() {
                 </div>
 
               </div>
-            </FadeInSection>
+            </ScrollReveal>
           ))}
         </div>
 

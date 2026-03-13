@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import OriginSection from "../../components/OriginSection";
 import GuaranteedSection from "../../components/GuaranteedSection";
-import FadeInSection from "../../components/FadeInSection";
+import ScrollReveal from "../../components/ScrollReveal";
 import PageTransition from "../../components/PageTransition";
 
 export const metadata: Metadata = {
@@ -30,12 +30,12 @@ export default function OurStoryPage() {
       </section>
 
       {/* Origin timeline */}
-      <FadeInSection>
+      <ScrollReveal>
         <OriginSection />
-      </FadeInSection>
+      </ScrollReveal>
 
       {/* Pharmacy full-bleed banner */}
-      <FadeInSection>
+      <ScrollReveal>
         <section
           className="relative px-6 py-36 text-center"
           style={{
@@ -80,12 +80,12 @@ export default function OurStoryPage() {
             </p>
           </div>
         </section>
-      </FadeInSection>
+      </ScrollReveal>
 
       {/* Philosophy — Proven, Aligned & Guaranteed */}
-      <FadeInSection>
+      <ScrollReveal>
         <GuaranteedSection />
-      </FadeInSection>
+      </ScrollReveal>
     </PageTransition>
   );
 }
