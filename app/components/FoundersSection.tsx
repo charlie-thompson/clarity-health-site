@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import ScrollReveal from "./ScrollReveal";
 
 interface Founder {
@@ -7,6 +8,7 @@ interface Founder {
   title: string;
   initials: string;
   photoFilename: string;
+  photo?: string;
   bio: string[] | null;
 }
 
@@ -16,6 +18,7 @@ const founders: Founder[] = [
     title: "Co-Founder",
     initials: "MM",
     photoFilename: "team-maney-mazloom.jpg",
+    photo: "/maney.png",
     bio: [
       "Board-certified licensed pharmacist, PharmD from Mercer University College of Pharmacy",
       "Co-founded Encompass RX (2012) — grew to nearly $500M/year revenue before CVS Health acquisition in under 6 years",
@@ -29,6 +32,7 @@ const founders: Founder[] = [
     title: "Co-Founder",
     initials: "JO",
     photoFilename: "team-john-olsen.jpg",
+    photo: "/john-olsen.png",
     bio: [
       "20+ years advocating for patients and clients in the pharmacy industry",
       "Built and operated multiple successful healthcare companies, always focused on delivering high-quality, high-touch, affordable services",
@@ -40,6 +44,7 @@ const founders: Founder[] = [
     title: "Co-Founder & Chief Operating Officer",
     initials: "S",
     photoFilename: "team-stephanie.jpg",
+    photo: "/stephanie.jpeg",
     bio: [
       "Pharmacist with 16+ years of experience across retail, specialty, and pharmacy benefit channels",
       "Expertise in pharmacy benefit strategy, specialty pharmacy operations, personalized patient care, and cost containment",
@@ -50,7 +55,14 @@ const founders: Founder[] = [
   },
 ];
 
-function FounderAvatar({ initials }: { initials: string }) {
+function FounderAvatar({ initials, photo, name }: { initials: string; photo?: string; name: string }) {
+  if (photo) {
+    return (
+      <div className="relative mx-auto h-32 w-32 overflow-hidden rounded-full bg-dark-blue">
+        <Image src={photo} alt={name} fill className="object-cover" />
+      </div>
+    );
+  }
   return (
     <div className="mx-auto flex h-32 w-32 items-center justify-center rounded-full bg-dark-blue text-2xl font-bold text-white">
       {initials}
@@ -70,11 +82,11 @@ export default function FoundersSection() {
         </ScrollReveal>
 
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
-          {founders.map(({ name, title, initials, bio }, i) => (
+          {founders.map(({ name, title, initials, photo, bio }, i) => (
             <ScrollReveal key={name} delay={i * 0.1} className="flex flex-col">
               <div className="flex flex-1 flex-col items-center rounded-2xl bg-white px-8 py-10 text-center shadow-sm">
 
-                <FounderAvatar initials={initials} />
+                <FounderAvatar initials={initials} photo={photo} name={name} />
 
                 <h3 className="mt-5 text-lg font-bold text-dark-blue">{name}</h3>
                 <p className="mt-1 text-sm font-semibold text-accent-teal">{title}</p>

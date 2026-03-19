@@ -6,7 +6,6 @@ import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 
 const NAV_LINKS = [
-  { label: "Home", href: "/" },
   {
     label: "About",
     children: [
@@ -141,7 +140,7 @@ export default function Navbar() {
             href="mailto:support@clarityhealthbenefits.com"
             className="ml-2 rounded-full bg-[#00C8E8] px-5 py-2 text-sm font-bold text-[#0B1F3A] transition-all duration-200 hover:bg-[#00A3B5] hover:shadow-md"
           >
-            Get a Demo
+            Connect with Clarity
           </Link>
         </nav>
 
@@ -240,7 +239,7 @@ export default function Navbar() {
             href="mailto:support@clarityhealthbenefits.com"
             className="mt-3 rounded-full bg-[#00C8E8] px-5 py-2.5 text-center text-sm font-bold text-[#0B1F3A] transition-all duration-200 hover:bg-[#00A3B5]"
           >
-            Get a Demo
+            Connect with Clarity
           </Link>
         </nav>
       </div>

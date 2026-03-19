@@ -3,7 +3,7 @@ import ScrollReveal from "./ScrollReveal";
 const cards = [
   {
     title: "Clarity",
-    body: "Flat PMPM rates — transparent, predictable, and contractually locked. No hidden spreads, no margin buried in the drug cost.",
+    body: "Customizable fee structures, flat PMPM rates, PEPM rates, shared savings, or hybrid — transparent, predictable, and contractually locked. No hidden spreads, no margin buried in the drug cost.",
   },
   {
     title: "Confidence",

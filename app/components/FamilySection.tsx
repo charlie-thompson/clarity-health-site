@@ -50,7 +50,7 @@ export default function FamilySection() {
           href="mailto:support@clarityhealthbenefits.com"
           className="mt-8 inline-block rounded-full bg-accent-teal px-8 py-3.5 text-sm font-semibold text-dark-blue transition-colors duration-200 hover:bg-light-blue"
         >
-          Get a Demo
+          Connect with Clarity
         </a>
       </div>
 

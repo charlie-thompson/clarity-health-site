@@ -112,7 +112,7 @@ export default function Home() {
                 href="mailto:support@clarityhealthbenefits.com"
                 className="rounded-full border-2 border-white/70 px-8 py-3.5 text-sm font-bold text-white transition-colors duration-200 hover:border-accent-teal hover:text-accent-teal"
               >
-                Get a Demo
+                Connect with Clarity
               </a>
             </div>
           </div>

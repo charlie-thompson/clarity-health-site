@@ -43,7 +43,7 @@ export default function ContactSection() {
           href="mailto:support@clarityhealthbenefits.com"
           className="cta-btn-glow mt-12 rounded-full bg-accent-teal px-10 py-4 text-base font-semibold text-dark-blue transition-colors duration-200 hover:bg-[#00A8C4]"
         >
-          Get a Demo
+          Connect with Clarity
         </a>
 
       </div>
