@@ -7,7 +7,7 @@ import PageTransition from "../../components/PageTransition";
 export const metadata: Metadata = {
   title: "Our Story — Clarity Health Benefits",
   description:
-    "Three pharmacists saw a broken system and built something better. Learn how Clarity was founded on transparency, alignment, and real savings.",
+    "Pharmacists who saw an opportunity to raise the bar on transparency, customization, and true client alignment. Learn how Clarity Health Benefits was built.",
 };
 
 export default function OurStoryPage() {
@@ -23,8 +23,9 @@ export default function OurStoryPage() {
             Our Story
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base font-medium leading-relaxed text-white/70">
-            Three pharmacists. One broken industry. A clean-slate solution built
-            to work for the client — not the middleman.
+            Pharmacists who saw a better way to deliver pharmacy benefits — more
+            transparent, more customizable, and genuinely aligned with clients
+            and the members they serve.
           </p>
         </div>
       </section>
@@ -73,10 +74,11 @@ export default function OurStoryPage() {
               className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg"
               style={{ textShadow: "0 1px 6px rgba(0,0,0,0.4)" }}
             >
-              We spent years inside the system — watching rebates get pocketed,
-              costs get hidden, and patients get left behind. Clarity wasn't
-              built in a boardroom. It was built at the pharmacy counter, by
-              clinicians who knew exactly what needed to change.
+              The pharmacy benefit landscape has evolved, but plan sponsors still
+              deserve more — more clinical expertise, more flexibility, more
+              accountability. Clarity wasn't built in a boardroom. It was built
+              at the pharmacy counter, by clinicians who knew exactly what
+              &ldquo;better&rdquo; should look like.
             </p>
           </div>
         </section>

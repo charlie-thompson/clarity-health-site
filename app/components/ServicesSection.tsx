@@ -22,15 +22,15 @@ interface Service {
 const services: Service[] = [
   {
     Icon: BadgeDollarSign,
-    title: "Copay Maximization",
+    title: "CopaySync",
     description:
-      "Redirect manufacturer brand-drug copay assistance to the plan. Typically saves $12–$16K per specialty drug enrolled.",
+      "Identify and enroll eligible members in manufacturer copay assistance programs, reducing out-of-pocket costs while generating plan-level savings. Typically saves $12–$16K per specialty drug enrolled.",
   },
   {
     Icon: Globe,
     title: "International Pharmacy",
     description:
-      "Source identical medications from Tier 1 pharmacy partners at 35–65% below US list prices.",
+      "Source equivalent medications from Tier 1 pharmacy partners at 35–65% below US list prices. Personal importation compliant, same clinical standards.",
   },
   {
     Icon: HeartHandshake,
@@ -48,7 +48,7 @@ const services: Service[] = [
     Icon: SlidersHorizontal,
     title: "Flexible Fee Structure",
     description:
-      "You choose: PMPM, per-claim, or a hybrid model. Fees are transparent, contractual, and never hidden in drug margins.",
+      "You choose: PMPM, PEPM, per-claim, or a hybrid model. Fees are transparent, contractual, and never hidden in drug margins.",
   },
   {
     Icon: Package,
@@ -83,8 +83,8 @@ export default function ServicesSection() {
 
         <ServiceCardGrid>
           {services.map(({ Icon, title, description }, i) => (
-            <ScrollReveal key={title} delay={i * 0.05}>
-              <div className="group service-card relative flex flex-col rounded-2xl bg-white py-7 pl-7 pr-6">
+            <ScrollReveal key={title} delay={i * 0.05} className="h-full">
+              <div className="group service-card relative flex h-full flex-col rounded-2xl bg-white py-7 pl-7 pr-6">
 
                 {/* Top gradient bar */}
                 <div

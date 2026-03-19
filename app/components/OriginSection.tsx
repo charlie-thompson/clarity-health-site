@@ -5,20 +5,20 @@ const steps: { Icon: LucideIcon; number: string; title: string; body: string }[]
   {
     Icon: ClipboardList,
     number: "1",
-    title: "A Broken System",
-    body: "Three pharmacists spent years watching legacy PBMs obscure costs, pocket rebates, and leave plan sponsors with zero flexibility — paying more every year.",
+    title: "A Gap in the Market",
+    body: "The transparent PBM model was a meaningful step forward — but plan sponsors still lacked the customization, clinical expertise, and true alignment their populations required.",
   },
   {
     Icon: ShieldCheck,
     number: "2",
-    title: "One Clear Mandate",
-    body: "It became clear the industry needed a PBM built to work for the client — not the middleman. Total transparency, full savings pass-through, programs tailored to real needs.",
+    title: "A Better Standard",
+    body: "Our founders saw the opportunity to build something more complete: full operational transparency paired with pharmacist-led strategy, hands-on member support, and contractual accountability.",
   },
   {
     Icon: Puzzle,
     number: "3",
     title: "So, We Built Clarity",
-    body: "No legacy systems. No hidden layers. A clean-slate, pharmacist-designed PBM built around contractual transparency, à la carte cost containment, and high-touch member support.",
+    body: "Customizable cost containment, 100% savings pass-through, and high-touch member engagement — all designed and managed by the pharmacists who built it.",
   },
 ];
 
@@ -29,7 +29,7 @@ export default function OriginSection() {
 
         {/* Section heading */}
         <h2 className="mb-20 text-center text-5xl font-bold text-dark-blue sm:text-6xl">
-          How Clarity Was Built
+          Why We Built Clarity
         </h2>
 
         {/* Timeline */}

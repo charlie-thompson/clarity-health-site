@@ -5,9 +5,9 @@ import ScrollReveal from "./components/ScrollReveal";
 import PageTransition from "./components/PageTransition";
 
 const valueProps = [
-  "True Claim-Level Transparency and Pass-Through",
+  "True Claim-Level Transparency",
   "Customizable and Personalized Cost Containment Strategies",
-  "Built & Run by Pharmacists",
+  "Designed & Managed by Pharmacists",
 ];
 
 export default function Home() {
@@ -93,11 +93,12 @@ export default function Home() {
               className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg"
               style={{ textShadow: "0 1px 6px rgba(0,0,0,0.4)" }}
             >
-              Legacy PBMs were built to extract margin at every step — from
-              rebates, spreads, and steering. Clarity was built to do the
-              opposite: pass every dollar back to the plan, give members real
-              access to affordable medications, and put pharmacists back in
-              charge of patient care.
+              The transparent PBM model was a step in the right direction —
+              but transparency alone isn&apos;t enough. Clarity Health Benefits
+              pairs full operational transparency with pharmacist-led clinical
+              strategy, customizable cost containment programs, and contractual
+              savings guarantees. The result: a pharmacy benefit partner
+              that&apos;s truly aligned with your plan&apos;s goals.
             </p>
 
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">

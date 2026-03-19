@@ -15,7 +15,7 @@ const NAV_LINKS = [
     ],
   },
   { label: "Services", href: "/services" },
-  { label: "Case Study", href: "/case-study" },
+  { label: "Our Results", href: "/our-results" },
 ];
 
 export default function Navbar() {

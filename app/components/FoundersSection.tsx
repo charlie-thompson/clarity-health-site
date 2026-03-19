@@ -36,11 +36,17 @@ const founders: Founder[] = [
     ],
   },
   {
-    name: "Stephanie",
-    title: "Co-Founder",
+    name: "Stephanie Dowell, PharmD",
+    title: "Co-Founder & Chief Operating Officer",
     initials: "S",
     photoFilename: "team-stephanie.jpg",
-    bio: null,
+    bio: [
+      "Pharmacist with 16+ years of experience across retail, specialty, and pharmacy benefit channels",
+      "Expertise in pharmacy benefit strategy, specialty pharmacy operations, personalized patient care, and cost containment",
+      "Managed and scaled a fertility pharmacy program — building clinical and business partnerships with providers while optimizing patient access and cost savings",
+      "Deep experience with benefit design, manufacturer assistance programs, and alternative sourcing strategies",
+      "At Clarity, leads delivery of transparent, customizable pharmacy benefit solutions that help self-funded groups control spend and maximize savings",
+    ],
   },
 ];
 

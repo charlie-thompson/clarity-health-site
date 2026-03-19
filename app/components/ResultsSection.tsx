@@ -7,7 +7,7 @@ const stats = [
     suffix: "M",
     decimals: 2,
     label: "Total Cost Containment Savings",
-    sub: "Copay Max · International Pharmacy · PAP",
+    sub: "CopaySync · International Pharmacy · PAP",
   },
   {
     prefix: "+",
@@ -30,7 +30,7 @@ const stats = [
 const breakdown = [
   {
     amount: "$1,537,017",
-    program: "Copay Maximization",
+    program: "CopaySync",
     sub: ">100 brand/specialty drugs enrolled",
   },
   {

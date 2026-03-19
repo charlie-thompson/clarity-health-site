@@ -1,10 +1,8 @@
-import { TrendingDown, ShieldCheck, BadgeCheck, Star } from "lucide-react";
+import { BadgeCheck, ShieldCheck } from "lucide-react";
 
 const signals = [
-  { Icon: TrendingDown, label: "100% Rebate Pass-Through" },
-  { Icon: ShieldCheck,  label: "Pharmacist-Designed" },
-  { Icon: BadgeCheck,   label: "Contractual Savings Guarantees" },
-  { Icon: Star,         label: "94% Member Satisfaction" },
+  { Icon: BadgeCheck,  label: "Best-in-Class, 100% Pass-Through Rebates" },
+  { Icon: ShieldCheck, label: "100% Contractual Savings Guarantees" },
 ];
 
 export default function TrustBar() {
