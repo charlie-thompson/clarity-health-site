@@ -15,7 +15,7 @@ interface Founder {
 const founders: Founder[] = [
   {
     name: "Dr. Maney Mazloom",
-    title: "Co-Founder",
+    title: "CEO & Co-Founder",
     initials: "MM",
     photoFilename: "team-maney-mazloom.jpg",
     photo: "/maney.png",
@@ -29,7 +29,7 @@ const founders: Founder[] = [
   },
   {
     name: "Dr. John Olsen",
-    title: "Co-Founder",
+    title: "President & Co-Founder",
     initials: "JO",
     photoFilename: "team-john-olsen.jpg",
     photo: "/john-olsen.png",
@@ -40,8 +40,8 @@ const founders: Founder[] = [
     ],
   },
   {
-    name: "Stephanie Dowell, PharmD",
-    title: "Co-Founder & Chief Operating Officer",
+    name: "Dr. Stephanie Dowell",
+    title: "COO & Co-Founder",
     initials: "S",
     photoFilename: "team-stephanie.jpg",
     photo: "/stephanie.jpeg",

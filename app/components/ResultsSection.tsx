@@ -90,12 +90,6 @@ export default function ResultsSection() {
               ))}
             </div>
 
-            {/* Pill badge */}
-            <div className="mt-8 inline-flex items-center rounded-full border border-accent-teal/40 bg-accent-teal/10 px-4 py-1.5">
-              <span className="text-sm font-semibold text-accent-teal">
-                $37 PMPM Saved · 3 Programs
-              </span>
-            </div>
           </div>
 
         </div>
